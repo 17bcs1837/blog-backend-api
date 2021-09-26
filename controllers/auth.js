@@ -52,7 +52,6 @@ exports.isAuthorized = (req, res, next) => {
     if(!isAuthorized) {
         return res.status(403).json({ msg: "Not Authorized" });
     }
-    console.log(isAuthorized)
     next();
 }
 
